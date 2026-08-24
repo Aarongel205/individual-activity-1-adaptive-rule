@@ -14,7 +14,7 @@ const Sports = () => {
       )
     });
   return (
-    <ul className='flex flex-row gap-2 overflow-x-auto w-full h-50'>
+    <ul className='flex flex-row gap-2 overflow-x-auto w-full h-50 m-2'>
       {sportsProducts}
     </ul>
   )
