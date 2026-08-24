@@ -87,9 +87,13 @@ function App() {
   return(
     <>
       <nav className='w-full h-15 bg-red-700 flex items-center p-2'>
-        <div className='flex flex-row p-2'>
-          <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className='border p-0.5' type='text'></input>
-          <Search className='ml-2 cursor-pointer' size={24}/>
+        <div className='flex flex-row justify-center items-center'>
+          <div>
+            <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className='border p-0.5 rounded-[5px] outline-0' type='text'></input>
+          </div>
+          <div className=' m-2 border cursor-pointer flex justify-center items-center p-0.5 rounded-[5px]'>
+            <Search className='cursor-pointer' size={24}/>
+          </div>
         </div>
       </nav>
       <ul className='flex flex-col'>
