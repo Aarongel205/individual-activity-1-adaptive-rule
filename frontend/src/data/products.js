@@ -1,24 +1,143 @@
 export const products = [
-  { name: 'Basketball', category: 'sports', price: 25 },
-  { name: 'Gaming Laptop', category: 'games', price: 20 },
-  { name: 'Air Fryer', category: 'appliances', price: 35 },
-  { name: 'Pasta Maker', category: 'cooking', price: 15 },
-  { name: 'Gaming Mouse', category: 'games', price: 10 },
-  { name: 'Electric Kettle', category: 'appliances', price: 18 },
-  { name: 'Football', category: 'sports', price: 22 },
-  { name: 'Blender', category: 'appliances', price: 30 },
-  { name: 'Cutting Board', category: 'cooking', price: 12 },
-  { name: 'Mechanical Keyboard', category: 'games', price: 45 },
-  { name: 'Tennis Racket', category: 'sports', price: 40 },
-  { name: 'Chef Knife', category: 'cooking', price: 28 },
-  { name: 'Gaming Headset', category: 'games', price: 35 },
-  { name: 'Rice Cooker', category: 'appliances', price: 50 },
-  { name: 'Cooking Pan', category: 'cooking', price: 32 },
-  { name: 'Volleyball', category: 'sports', price: 20 },
-  { name: 'Gaming Chair', category: 'games', price: 80 },
-  { name: 'Microwave Oven', category: 'appliances', price: 90 },
-  { name: 'Measuring Cups', category: 'cooking', price: 8 },
-  { name: 'Baseball Glove', category: 'sports', price: 35 },
+  {
+    name: 'Basketball',
+    category: 'sports',
+    price: 25,
+    imageUrl: 'https://www.dreamcourt.ph/cdn/shop/products/ball_white-ish.jpg?v=1691745251'
+  },
+
+  {
+    name: 'Gaming Laptop',
+    category: 'games',
+    price: 20,
+    imageUrl: '/images/gaming-laptop.jpg'
+  },
+
+  {
+    name: 'Air Fryer',
+    category: 'appliances',
+    price: 35,
+    imageUrl: '/images/air-fryer.jpg'
+  },
+
+  {
+    name: 'Pasta Maker',
+    category: 'cooking',
+    price: 15,
+    imageUrl: '/images/pasta-maker.jpg'
+  },
+
+  {
+    name: 'Gaming Mouse',
+    category: 'games',
+    price: 10,
+    imageUrl: '/images/gaming-mouse.jpg'
+  },
+
+  {
+    name: 'Electric Kettle',
+    category: 'appliances',
+    price: 18,
+    imageUrl: '/images/electric-kettle.jpg'
+  },
+
+  {
+    name: 'Football',
+    category: 'sports',
+    price: 22,
+    imageUrl: '/images/football.jpg'
+  },
+
+  {
+    name: 'Blender',
+    category: 'appliances',
+    price: 30,
+    imageUrl: '/images/blender.jpg'
+  },
+
+  {
+    name: 'Cutting Board',
+    category: 'cooking',
+    price: 12,
+    imageUrl: '/images/cutting-board.jpg'
+  },
+
+  {
+    name: 'Mechanical Keyboard',
+    category: 'games',
+    price: 45,
+    imageUrl: '/images/mechanical-keyboard.jpg'
+  },
+
+  {
+    name: 'Tennis Racket',
+    category: 'sports',
+    price: 40,
+    imageUrl: 'https://cdn11.bigcommerce.com/s-meuoh09dlj/images/stencil/1280x1280/products/7008/33434/1__06218.1770283665.jpg?c=1'
+  },
+
+  {
+    name: 'Chef Knife',
+    category: 'cooking',
+    price: 28,
+    imageUrl: '/images/chef-knife.jpg'
+  },
+
+  {
+    name: 'Gaming Headset',
+    category: 'games',
+    price: 35,
+    imageUrl: '/images/gaming-headset.jpg'
+  },
+
+  {
+    name: 'Rice Cooker',
+    category: 'appliances',
+    price: 50,
+    imageUrl: 'https://ecatalog-media.homepro.co.th/homepro/ART_IMAGE/12/792/1279257/1000x1000/27112024_1279257%24Imagec1.jpg'
+  },
+
+  {
+    name: 'Cooking Pan',
+    category: 'cooking',
+    price: 32,
+    imageUrl: '/images/cooking-pan.jpg'
+  },
+
+  {
+    name: 'Volleyball',
+    category: 'sports',
+    price: 20,
+    imageUrl: '/images/volley-ball.jpg'
+  },
+
+  {
+    name: 'Gaming Chair',
+    category: 'games',
+    price: 80,
+    imageUrl: '/images/gaming-chair.jpg'
+  },
+
+  {
+    name: 'Microwave Oven',
+    category: 'appliances',
+    price: 90,
+    imageUrl: '/images/microwave-oven.jpg'
+  },
+
+  {
+    name: 'Measuring Cups',
+    category: 'cooking',
+    price: 8,
+    imageUrl: '/images/measuring-cups.jpg'
+  },
+
+  {
+    name: 'Baseball Glove',
+    category: 'sports',
+    price: 35,
+    imageUrl: '/images/baseball-glove.jpg'
+  },
 ];
 
 export default { products };
