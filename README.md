@@ -29,3 +29,4 @@ note: the counter will only trigger if the user click the search button, user ca
 
 # Deployment Link
 https://aarongel205.github.io/individual-activity-1-adaptive-rule/
+note: if there is a problem(ex. image & pages didn't load), just refresh the page
