@@ -15,7 +15,7 @@ function App() {
   const [openSports, setOpenSports] = useState(false);
   const [openGames, setOpenGames] = useState(false);
   const [openCooking, setOpenCooking] = useState(false);
-  const [openAppliances, setOpenAppliances] = useState(true);
+  const [openAppliances, setOpenAppliances] = useState(false);
 
   const [preferences, setPreferences] = useState(() => {
     const savedPreferences = localStorage.getItem('preferences')
@@ -123,10 +123,10 @@ function App() {
     <>
    
   
-      {openSports && <SportsPage/>}
-      {openGames && <GamePage/>}
-      {openCooking && <CookingPage/>}
-      {openAppliances && <AppliancesPage/>}
+      {openSports && <SportsPage setOpenSports={setOpenSports}/>}
+      {openGames && <GamePage setOpenGames={setOpenGames} />}
+      {openCooking && <CookingPage setOpenCooking={setOpenCooking} />}
+      {openAppliances && <AppliancesPage setOpenAppliances={setOpenAppliances}/>}
       {/* Navbar */}
       <nav className='w-full min-h-15 bg-[#5A189A] flex items-center px-3 sm:px-5'>
         <div className='w-full max-w-3xl mx-auto flex items-center gap-2'>
