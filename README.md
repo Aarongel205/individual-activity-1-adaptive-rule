@@ -1,6 +1,7 @@
 # Individual Activity - Build a Simple Adaptive Rule - CS412
 ### Aaron P. Adanza
 ### CS4D
+### August 24, 2026
 
 # Two Adaptive Rules
 ## Rule 1: Search Preference
