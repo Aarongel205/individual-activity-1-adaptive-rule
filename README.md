@@ -25,5 +25,7 @@ If a user's preference for a category reaches at least 3 and is higher than the 
 
 For example, if the user's cooking preference is 3 and it is higher than sports, games, and appliances, the system will show cooking recommendations.
 
+note: the counter will only trigger if the user click the search button, user can generally search(Ex. sports, gaming, appliances & cooking).
+
 # Deployment Link
 https://aarongel205.github.io/individual-activity-1-adaptive-rule/
