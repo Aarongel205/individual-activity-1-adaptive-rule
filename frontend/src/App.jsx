@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Games from './components/Games'
 import Sports from './components/Sports'
 import { products } from './data/products'
+import Cooking from './components/Cooking'
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -52,11 +53,35 @@ function App() {
     )
   });
   const renderRecommendation = () => {
-    if(preferences.games >= 3){
-      return <Games/>
-    }else{
-      return <Sports/>
-    }
+        if (
+      preferences.cooking >= 3 &&
+      preferences.cooking > preferences.sports &&
+      preferences.cooking > preferences.appliances &&
+      preferences.cooking > preferences.games
+    ) {
+      return <Cooking />;
+    } else if (
+      preferences.sports >= 3 &&
+      preferences.sports > preferences.cooking &&
+      preferences.sports > preferences.appliances &&
+      preferences.sports > preferences.games
+    ) {
+      return <Sports />;
+    } else if (
+      preferences.appliances >= 3 &&
+      preferences.appliances > preferences.cooking &&
+      preferences.appliances > preferences.sports &&
+      preferences.appliances > preferences.games
+    ) {
+      return <Appliances />;
+    } else if (
+      preferences.games >= 3 &&
+      preferences.games > preferences.cooking &&
+      preferences.games > preferences.sports &&
+      preferences.games > preferences.appliances
+    ) {
+      return <Games />;
+}
   }
   return(
     <>
