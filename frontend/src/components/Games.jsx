@@ -18,11 +18,11 @@ const Games = () => {
           h-48
           sm:h-52
           md:h-56
-          border
-          border-amber-500
+          border-5
+        border-[#5A189A] 
           rounded-lg
           overflow-hidden
-          bg-white
+          bg-[#5A189A] 
           p-2
         '
         key={index}

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Games from './components/Games'
 import Sports from './components/Sports'
 import Cooking from './components/Cooking'
+import Appliances from './components/Appliances'
 import { products } from './data/products'
 import { Search } from 'lucide-react'
 
@@ -54,7 +55,7 @@ function App() {
   const allProducts = products.map((product, index) => {
     return (
       <li
-        className='border rounded-lg overflow-hidden bg-white'
+        className='border-5 border-[#5A189A] rounded-lg overflow-hidden bg-[#5A189A] text-white'
         key={index}
       >
         <img
@@ -113,7 +114,7 @@ function App() {
   return (
     <>
       {/* Navbar */}
-      <nav className='w-full min-h-15 bg-red-700 flex items-center px-3 sm:px-5'>
+      <nav className='w-full min-h-15 bg-[#5A189A] flex items-center px-3 sm:px-5'>
         <div className='w-full max-w-3xl mx-auto flex items-center gap-2'>
           
           <input
@@ -149,18 +150,39 @@ function App() {
       )}
 
       {/* Main Section */}
-      <section className='w-full min-h-screen bg-blue-700 p-3 sm:p-4 md:p-6'>
+      <section className='w-full min-h-screen bg-white p-3 sm:p-4 md:p-6'>
         
         {/* Banner */}
-        <div className='w-full max-w-7xl mx-auto h-40 sm:h-52 md:h-60 border rounded-lg mb-4 sm:mb-6'>
+        <div className='relative w-full max-w-7xl mx-auto min-h-40 sm:min-h-52 md:min-h-60 bg-[#5A189A] rounded-lg mb-4 sm:mb-6 overflow-hidden'>
+          <div className='relative z-10 p-4 sm:p-6 md:p-8 max-w-3xl'>
+            <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-bold'>
+              E-commerce
+            </h1>
+
+            <p className='mt-2 text-sm sm:text-base md:text-lg text-white max-w-2xl'>
+              A simple e-commerce website where users can browse products, search for items, view product details, and easily manage their shopping cart.
+            </p>
+          </div>
+
+          <div className='absolute right-0 bottom-0 opacity-10 translate-x-6 translate-y-6 sm:translate-x-8 sm:translate-y-8 md:translate-x-10 md:translate-y-10'>
+            <svg className='w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 lg:w-72 lg:h-72' viewBox='0 0 24 24' fill='currentColor'>
+              <path d="M7 4H3v2h2l2.6 11.4A2 2 0 0 0 9.55 19H18v-2H9.55a.5.5 0 0 1-.49-.39L8.8 16H18a2 2 0 0 0 1.9-1.37L22 8H7.42L7 6h1V4H7zm2.1 6h10.22l-1.31 4H10.01l-.91-4zM10 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm8 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            </svg>
+          </div>
         </div>
 
         {/* Recommendation */}
-        <div className='w-full max-w-7xl mx-auto mb-4 sm:mb-6'>
+        <div className='w-full flex flex-col  max-w-7xl mx-auto mb-4 sm:mb-6 justify-center items-center'>
+          <div className='flex w-full justify-start m-2'>
+            <h1>Recommendations</h1>
+          </div>
           {renderRecommendation()}
         </div>
 
         {/* Products */}
+        <div className='flex w-full justify-start m-2'>
+            <h1>All Products</h1>
+        </div>
         <ul className='
           w-full
           max-w-7xl
