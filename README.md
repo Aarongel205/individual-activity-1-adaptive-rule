@@ -24,3 +24,6 @@ For example, if the user searches for a sports product, the sports preference wi
 If a user's preference for a category reaches at least 3 and is higher than the other categories, the system will recommend that category to the user.
 
 For example, if the user's cooking preference is 3 and it is higher than sports, games, and appliances, the system will show cooking recommendations.
+
+# Deployment Link
+https://aarongel205.github.io/individual-activity-1-adaptive-rule/
