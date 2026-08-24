@@ -44,14 +44,40 @@ function App() {
   const handleSearch = () => {
     const searchTerm = searchQuery.toLowerCase().trim()
 
-    const matchingProduct = products.find(product =>
-      product.name.toLowerCase().includes(searchTerm)
-    )
-
-    if (matchingProduct) {
-      increasePreference(matchingProduct.category)
+    // Check if user searched for a category
+    if (searchTerm === 'sports') {
+      increasePreference('sports')
+      setOpenSports(true)
+      return
     }
+
+    if (searchTerm === 'games' || searchTerm === 'gaming') {
+      increasePreference('games')
+      setOpenGames(true)
+      return
+    }
+
+    if (searchTerm === 'cooking') {
+      increasePreference('cooking')
+      setOpenCooking(true)
+      return
+    }
+
+    if (searchTerm === 'appliances' || searchTerm === 'appliance') {
+      increasePreference('appliances')
+      setOpenAppliances(true)
+      return
+    }
+
+  // Otherwise, search for a specific product
+  const matchingProduct = products.find(product =>
+    product.name.toLowerCase().includes(searchTerm)
+  )
+
+  if (matchingProduct) {
+    increasePreference(matchingProduct.category)
   }
+}
 
   const filteredProducts = products.filter(product => {
     return (
