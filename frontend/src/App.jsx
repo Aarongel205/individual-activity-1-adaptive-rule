@@ -174,6 +174,9 @@ function App() {
       {openAppliances && <AppliancesPage setOpenAppliances={setOpenAppliances}/>}
       {/* Navbar */}
       <nav className='w-full min-h-15 bg-[#5A189A] flex items-center px-3 sm:px-5'>
+        <div className='text-white'>
+          <h1>Aaron Adanza -CS4D</h1>
+        </div>
         <div className='w-full max-w-3xl mx-auto flex items-center gap-2'>
           
           <input
