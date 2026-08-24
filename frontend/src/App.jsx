@@ -3,6 +3,7 @@ import Games from './components/Games'
 import Sports from './components/Sports'
 import { products } from './data/products'
 import Cooking from './components/Cooking'
+import { Search } from 'lucide-react';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -81,13 +82,15 @@ function App() {
       preferences.games > preferences.appliances
     ) {
       return <Games />;
-}
+    }
   }
   return(
     <>
-      <nav className='w-full h-10 bg-red-700'>
-        <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className='border px-2 m-2' type='text'></input>
-        <button onClick={handleSearch}>Search</button>
+      <nav className='w-full h-15 bg-red-700 flex items-center p-2'>
+        <div className='flex flex-row p-2'>
+          <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className='border p-0.5' type='text'></input>
+          <Search className='ml-2 cursor-pointer' size={24}/>
+        </div>
       </nav>
       <ul className='flex flex-col'>
         {filteredProducts.map((product, index) =>{
