@@ -27,13 +27,26 @@ const Games = () => {
         '
         key={index}
       >
-        <p className='text-sm sm:text-base font-medium truncate'>
-          {product.name}
-        </p>
+        <img
+          className='
+            w-full
+            h-28
+            sm:h-32
+            md:h-36
+            object-cover
+          '
+          src={product.imageUrl}
+          alt={product.name}
+        />
+        <div className='p-2'>
+          <p className='text-sm sm:text-base font-medium truncate'>
+            {product.name}
+          </p>
 
-        <p className='text-sm sm:text-base'>
-          {product.price}$
-        </p>
+          <p className='text-sm sm:text-base'>
+            {product.price}$
+          </p>
+        </div>
       </li>
     )
   })

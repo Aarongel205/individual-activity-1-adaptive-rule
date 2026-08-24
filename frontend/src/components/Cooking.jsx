@@ -36,7 +36,7 @@ const Cooking = () => {
             md:h-36
             object-cover
           '
-          src={hero}
+          src={product.imageUrl}
           alt={product.name}
         />
 

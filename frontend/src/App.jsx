@@ -7,6 +7,8 @@ import Appliances from './components/Appliances'
 import SportsPage from './pages/SportsPage'
 import AppliancesPage from './pages/AppliancesPage'
 import Allproducts from './components/Allproducts'
+import GamePage from './pages/GamePage'
+import CookingPage from './pages/CookingPage'
 
 import { products } from './data/products'
 import { Search } from 'lucide-react'
