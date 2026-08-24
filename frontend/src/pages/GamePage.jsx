@@ -1,5 +1,6 @@
 import React from 'react'
 import Games from '../components/Games'
+import { ArrowLeft } from 'lucide-react';
 
 const GamePage = ({setOpenGames}) => {
   return (
