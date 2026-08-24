@@ -3,11 +3,19 @@ import Games from './components/Games'
 import Sports from './components/Sports'
 import Cooking from './components/Cooking'
 import Appliances from './components/Appliances'
+
+import SportsPage from './pages/SportsPage'
+import AppliancesPage from './pages/AppliancesPage'
+
 import { products } from './data/products'
 import { Search } from 'lucide-react'
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState('')
+  const [searchQuery, setSearchQuery] = useState('');
+  const [openSports, setOpenSports] = useState(false);
+  const [openGames, setOpenGames] = useState(false);
+  const [openCooking, setOpenCooking] = useState(false);
+  const [openAppliances, setOpenAppliances] = useState(true);
 
   const [preferences, setPreferences] = useState(() => {
     const savedPreferences = localStorage.getItem('preferences')
@@ -113,6 +121,12 @@ function App() {
 
   return (
     <>
+   
+  
+      {openSports && <SportsPage/>}
+      {openGames && <GamePage/>}
+      {openCooking && <CookingPage/>}
+      {openAppliances && <AppliancesPage/>}
       {/* Navbar */}
       <nav className='w-full min-h-15 bg-[#5A189A] flex items-center px-3 sm:px-5'>
         <div className='w-full max-w-3xl mx-auto flex items-center gap-2'>
