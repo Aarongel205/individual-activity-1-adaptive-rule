@@ -3,6 +3,15 @@
 ### CS4D
 ### August 24, 2026
 
+# How to Run the Code
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
+3. Open the terminal and run:
+npm install
+4. After the installation is finished, run:
+npm run dev
+5. Open the local link shown in the terminal in your web browser.
+
 # Two Adaptive Rules
 ## Rule 1: Search Preference
 
