@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 const GamePage = ({setOpenGames}) => {
   return (
-    <div className='text-[#E0AAFF] bg-white min-h-screen w-full z-9999 fixed top-0 left-0 flex flex-col justify-center items-center'>
+    <div className='text-[#5A189A] bg-white min-h-screen w-full z-9999 fixed top-0 left-0 flex flex-col justify-center items-center'>
       <div className='w-full flex justify-start'>
         <ArrowLeft onClick={() => setOpenGames(false)} className='m-2 cursor-pointer'/>
       </div>
