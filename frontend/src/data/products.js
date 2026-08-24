@@ -10,63 +10,63 @@ export const products = [
     name: 'Gaming Laptop',
     category: 'games',
     price: 20,
-    imageUrl: '/images/gaming-laptop.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/gaming-laptop.jpg`
   },
 
   {
     name: 'Air Fryer',
     category: 'appliances',
     price: 35,
-    imageUrl: '/images/air-fryer.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/air-fryer.jpg`
   },
 
   {
     name: 'Pasta Maker',
     category: 'cooking',
     price: 15,
-    imageUrl: '/images/pasta-maker.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/pasta-maker.jpg`
   },
 
   {
     name: 'Gaming Mouse',
     category: 'games',
     price: 10,
-    imageUrl: '/images/gaming-mouse.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/gaming-mouse.jpg`
   },
 
   {
     name: 'Electric Kettle',
     category: 'appliances',
     price: 18,
-    imageUrl: '/images/electric-kettle.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/electric-kettle.jpg`
   },
 
   {
     name: 'Football',
     category: 'sports',
     price: 22,
-    imageUrl: '/images/football.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/football.jpg`
   },
 
   {
     name: 'Blender',
     category: 'appliances',
     price: 30,
-    imageUrl: '/images/blender.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/blender.jpg`
   },
 
   {
     name: 'Cutting Board',
     category: 'cooking',
     price: 12,
-    imageUrl: '/images/cutting-board.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/cutting-board.jpg`
   },
 
   {
     name: 'Mechanical Keyboard',
     category: 'games',
     price: 45,
-    imageUrl: '/images/mechanical-keyboard.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/mechanical-keyboard.jpg`
   },
 
   {
@@ -80,14 +80,14 @@ export const products = [
     name: 'Chef Knife',
     category: 'cooking',
     price: 28,
-    imageUrl: '/images/chef-knife.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/chef-knife.jpg`
   },
 
   {
     name: 'Gaming Headset',
     category: 'games',
     price: 35,
-    imageUrl: '/images/gaming-headset.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/gaming-headset.jpg`
   },
 
   {
@@ -101,42 +101,42 @@ export const products = [
     name: 'Cooking Pan',
     category: 'cooking',
     price: 32,
-    imageUrl: '/images/cooking-pan.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/cooking-pan.jpg`
   },
 
   {
     name: 'Volleyball',
     category: 'sports',
     price: 20,
-    imageUrl: '/images/volley-ball.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/volley-ball.jpg`
   },
 
   {
     name: 'Gaming Chair',
     category: 'games',
     price: 80,
-    imageUrl: '/images/gaming-chair.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/gaming-chair.jpg`
   },
 
   {
     name: 'Microwave Oven',
     category: 'appliances',
     price: 90,
-    imageUrl: '/images/microwave-oven.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/microwave-oven.jpg`
   },
 
   {
     name: 'Measuring Cups',
     category: 'cooking',
     price: 8,
-    imageUrl: '/images/measuring-cups.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/measuring-cups.jpg`
   },
 
   {
     name: 'Baseball Glove',
     category: 'sports',
     price: 35,
-    imageUrl: '/images/baseball-glove.jpg'
+    imageUrl: `${import.meta.env.BASE_URL}images/baseball-glove.jpg`
   },
 ];
 
