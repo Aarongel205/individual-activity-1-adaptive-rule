@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+.cardStyle {
+  border: 1px solid black;
+  width: 128px;
+  min-width: 128px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .cardStyle {
+    width: 144px;
+    min-width: 144px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardStyle {
+    width: 160px;
+    min-width: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardStyle {
+    width: 176px;
+    min-width: 176px;
+  }
+}
