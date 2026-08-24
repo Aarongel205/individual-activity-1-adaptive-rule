@@ -6,6 +6,7 @@ import Appliances from './components/Appliances'
 
 import SportsPage from './pages/SportsPage'
 import AppliancesPage from './pages/AppliancesPage'
+import Allproducts from './components/Allproducts'
 
 import { products } from './data/products'
 import { Search } from 'lucide-react'
@@ -44,7 +45,7 @@ function App() {
   const handleSearch = () => {
     const searchTerm = searchQuery.toLowerCase().trim()
 
-    // Check if user searched for a category
+    // Search category directly
     if (searchTerm === 'sports') {
       increasePreference('sports')
       setOpenSports(true)
@@ -69,15 +70,33 @@ function App() {
       return
     }
 
-  // Otherwise, search for a specific product
-  const matchingProduct = products.find(product =>
-    product.name.toLowerCase().includes(searchTerm)
-  )
+    // Search for a specific product
+    const matchingProduct = products.find(product =>
+      product.name.toLowerCase().includes(searchTerm)
+    )
 
-  if (matchingProduct) {
-    increasePreference(matchingProduct.category)
+    if (matchingProduct) {
+      // Increase preference
+      increasePreference(matchingProduct.category)
+
+      // Open modal based on product category
+      if (matchingProduct.category === 'sports') {
+        setOpenSports(true)
+      }
+
+      if (matchingProduct.category === 'games') {
+        setOpenGames(true)
+      }
+
+      if (matchingProduct.category === 'cooking') {
+        setOpenCooking(true)
+      }
+
+      if (matchingProduct.category === 'appliances') {
+        setOpenAppliances(true)
+      }
+    }
   }
-}
 
   const filteredProducts = products.filter(product => {
     return (
@@ -142,7 +161,7 @@ function App() {
       return <Games />
     }
 
-    return null
+    return <Allproducts/>;
   }
 
   return (
