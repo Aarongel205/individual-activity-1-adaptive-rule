@@ -181,6 +181,7 @@ function App() {
           
           <input
             value={searchQuery}
+
             onChange={(e) => setSearchQuery(e.target.value)}
             className='flex-1 min-w-0 border bg-white p-2 rounded-md outline-none text-sm sm:text-base'
             type='text'
