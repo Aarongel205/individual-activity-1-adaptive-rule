@@ -62,7 +62,7 @@ Error generating stack: `+e.message+`
         overflow-y-hidden\r
         p-1\r
         mb-4\r
-      `,children:e})},C=`/assets/hero-CLDdwZDr.png`,te=()=>{let e=y.filter(e=>e.category===`cooking`).map((e,t)=>(0,x.jsxs)(`li`,{className:`\r
+      `,children:e})},C=`/individual-activity-1-adaptive-rule/assets/hero-CLDdwZDr.png`,te=()=>{let e=y.filter(e=>e.category===`cooking`).map((e,t)=>(0,x.jsxs)(`li`,{className:`\r
           shrink-0\r
           w-32\r
           sm:w-36\r
